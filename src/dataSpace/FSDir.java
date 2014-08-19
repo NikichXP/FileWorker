@@ -30,7 +30,7 @@ public class FSDir extends FSObject {
 	
 	public void printContainableSizes() {
 		for (FSObject obj : dir) {
-			System.out.println(obj.size + " size: "  + obj.loc.getPath() );
+			System.out.println(obj.size + " size: "  + obj.location.getPath() );
 		}
 	}
 	public void printContainableSizes(String dependenablePath) {
@@ -38,7 +38,7 @@ public class FSDir extends FSObject {
 		//Данный метод существует для демонстрации полиморфизма.
 		
 		for (FSObject obj : dir) {
-			System.out.println(obj.size + " size: "  + obj.loc.getAbsolutePath() );
+			System.out.println(obj.size + " size: "  + obj.location.getAbsolutePath() );
 		}
 	}
 	
